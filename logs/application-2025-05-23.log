@@ -1,0 +1,328 @@
+2025-05-23 00:04:44 [http-nio-9090-exec-6] INFO  c.e.l.Controller.CustomerController - Profil görüntüleniyor: aliSeccad@example.com
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Controller.CustomerController - Kredi başvurusu alındı: Kullanıcı ID 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Controller.CustomerController - Kredi başvurusu tamamlandı: Kullanıcı ID 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.S.LoanApplicationsService - Yeni başvuru başlatıldı - Kullanıcı ID: 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.S.LoanApplicationsService - Başvuru değerlendirme işlemi başlatıldı - Başvuru ID: 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 1
+2025-05-23 00:09:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 90000.0, Kredi Skoru: 800.0
+2025-05-23 00:09:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 36.0
+2025-05-23 00:09:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 56.47058823529411
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 36.0, Kredi Skoru Faktörü: 56.47058823529411, Toplam Skor: 92.47058823529412
+2025-05-23 00:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 1, Skor: 92.47058823529412, Karar: APPROVED
+2025-05-23 00:09:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Messaging.NotificationConsumer - Yeni bildirim alındı: Kredi başvurunuz başarıyla alınmıştır. Başvuru ID: 1
+2025-05-23 00:09:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=1
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Controller.CustomerController - Kredi başvurusu alındı: Kullanıcı ID 1
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Controller.CustomerController - Kredi başvurusu tamamlandı: Kullanıcı ID 1
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.S.LoanApplicationsService - Yeni başvuru başlatıldı - Kullanıcı ID: 1
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.S.LoanApplicationsService - Başvuru değerlendirme işlemi başlatıldı - Başvuru ID: 2
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 2
+2025-05-23 00:09:21 [http-nio-9090-exec-2] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 2
+2025-05-23 00:09:21 [http-nio-9090-exec-2] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 90000.0, Kredi Skoru: 800.0
+2025-05-23 00:09:21 [http-nio-9090-exec-2] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 36.0
+2025-05-23 00:09:21 [http-nio-9090-exec-2] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 56.47058823529411
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 36.0, Kredi Skoru Faktörü: 56.47058823529411, Toplam Skor: 92.47058823529412
+2025-05-23 00:09:21 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Messaging.NotificationConsumer - Yeni bildirim alındı: Kredi başvurunuz başarıyla alınmıştır. Başvuru ID: 2
+2025-05-23 00:09:21 [http-nio-9090-exec-2] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 2, Skor: 92.47058823529412, Karar: APPROVED
+2025-05-23 00:09:21 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=1
+2025-05-23 00:13:07 [http-nio-9090-exec-7] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:13:07 [http-nio-9090-exec-7] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:13:07 [http-nio-9090-exec-7] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:13:07 [http-nio-9090-exec-7] INFO  c.e.l.S.LoanApplicationsService - Kullanıcının başvuruları getiriliyor - Kullanıcı ID: null
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Yeni başvuru başlatıldı - Kullanıcı ID: 3
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 3, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 3, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Başvuru değerlendirme işlemi başlatıldı - Başvuru ID: 3
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 3
+2025-05-23 00:17:17 [http-nio-9090-exec-3] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 3
+2025-05-23 00:17:17 [http-nio-9090-exec-3] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 40000.0, Kredi Skoru: 700.0
+2025-05-23 00:17:17 [http-nio-9090-exec-3] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 16.0
+2025-05-23 00:17:17 [http-nio-9090-exec-3] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 49.41176470588235
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 16.0, Kredi Skoru Faktörü: 49.41176470588235, Toplam Skor: 65.41176470588235
+2025-05-23 00:17:17 [http-nio-9090-exec-3] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 3, Skor: 65.41176470588235, Karar: APPROVED
+2025-05-23 00:17:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Messaging.NotificationConsumer - Yeni bildirim alındı: Kredi başvurunuz başarıyla alınmıştır. Başvuru ID: 3
+2025-05-23 00:17:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=3
+2025-05-23 00:17:34 [http-nio-9090-exec-6] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:17:34 [http-nio-9090-exec-6] INFO  c.e.l.S.LoanApplicationsService - Kullanıcının başvuruları getiriliyor - Kullanıcı ID: null
+2025-05-23 00:24:17 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 6044 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:24:17 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:24:17 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:24:25 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:24:30 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 13.734 seconds (process running for 14.559)
+2025-05-23 00:24:51 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:24:51 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:24:51 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:24:51 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk0OTA5MSwianRpIjoiZDA2MTMyODAtMmM0Zi00Nzc3LTllZmQtMTY1YWVmNDhlM2I1IiwiZXhwIjoxNzQ3OTg1MDkxfQ.LzEX36743Qt9tcqTksb1zz-Ds22vz6kcfjzd5IZ9How
+2025-05-23 00:24:51 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:25:18 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının bildirimleri getiriliyor: aliSeccad@example.com
+2025-05-23 00:25:18 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:25:18 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:30:20 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 9840 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:30:20 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:30:20 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:30:28 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:30:33 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 14.225 seconds (process running for 15.074)
+2025-05-23 00:30:46 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:30:46 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:30:46 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:30:46 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk0OTQ0NiwianRpIjoiZWJhYzY2YjQtMWRiZC00NjFkLWE5YzktZWE2MTAzOGI2OGZjIiwiZXhwIjoxNzQ3OTg1NDQ2fQ.HljQG3YBVHuUhkxmb5UsYQzBB7-Nq364HW0K-cenl8M
+2025-05-23 00:30:46 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:31:01 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının bildirimleri getiriliyor: aliSeccad@example.com
+2025-05-23 00:31:01 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:31:01 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:32:05 [http-nio-9090-exec-5] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:32:28 [http-nio-9090-exec-7] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:34:08 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 15292 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:34:08 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:34:08 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:34:16 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:34:20 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 13.096 seconds (process running for 13.965)
+2025-05-23 00:34:26 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:34:26 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:34:27 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:34:27 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk0OTY2NywianRpIjoiMTIxMmI0MTctYTdlZS00MmUzLWIzMWItZGI3YTk4YmRlZjQyIiwiZXhwIjoxNzQ3OTg1NjY3fQ.KC8zWZC9H1AW2xogMYA1NT9VI9x0CQZdOzuhTO9POLY
+2025-05-23 00:34:27 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:34:37 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:34:37 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:34:37 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:34:37 [http-nio-9090-exec-3] WARN  c.e.l.Controller.CustomerController - Kullanıcı veya kullanıcı ID bulunamadı: aliSeccad@example.com
+2025-05-23 00:37:20 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 20088 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:37:20 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:37:20 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:37:27 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:37:32 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 12.871 seconds (process running for 13.673)
+2025-05-23 00:37:40 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:37:40 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:37:40 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:37:40 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk0OTg2MCwianRpIjoiMGJjM2YzZTUtMDEyMi00MTlkLTg0ZDMtOGFhNDliNTZjMTI2IiwiZXhwIjoxNzQ3OTg1ODYwfQ.lULPNeyF6K1HF0yEzbOvj8Di3f4vGaFiQyGrISmZdIc
+2025-05-23 00:37:40 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:37:52 [http-nio-9090-exec-1] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:37:52 [http-nio-9090-exec-1] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:37:52 [http-nio-9090-exec-1] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:37:52 [http-nio-9090-exec-1] WARN  c.e.l.Controller.CustomerController - Kullanıcı veya kullanıcı ID bulunamadı: aliSeccad@example.com
+2025-05-23 00:42:56 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 24932 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:42:56 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:42:56 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:43:03 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:43:08 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 12.506 seconds (process running for 13.301)
+2025-05-23 00:43:14 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:43:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:43:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:43:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk1MDE5NCwianRpIjoiN2FhYjZjM2MtYTgzZC00ZWM5LWI3MTMtOWE2YmZlZmRkOGVhIiwiZXhwIjoxNzQ3OTg2MTk0fQ.p85IHEX-w9e35SJEP-M-c-DbsH-MvDA8piP0mmLh588
+2025-05-23 00:43:14 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:43:28 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:43:28 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:43:28 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:43:28 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - userDto: com.example.loan_platform.DTO.Entity.UsersDto@22dd945d
+2025-05-23 00:43:28 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - userDto.id: 3
+2025-05-23 00:46:28 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 25760 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:46:28 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:46:28 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:46:36 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:46:41 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 13.341 seconds (process running for 14.121)
+2025-05-23 00:46:47 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:46:47 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:46:47 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:46:47 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk1MDQwNywianRpIjoiM2EwZWYzNjctMDkyYi00YzZlLWJiMWYtNTM1NGM1NzZmYWQxIiwiZXhwIjoxNzQ3OTg2NDA3fQ.ztilirKSMeE84i6i3LLJ_wB1Bt2gil7b8eF9xuoS7H4
+2025-05-23 00:46:47 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:46:57 [http-nio-9090-exec-1] INFO  c.e.l.Controller.CustomerController - Kullanıcının başvuruları getiriliyor: aliSeccad@example.com
+2025-05-23 00:46:57 [http-nio-9090-exec-1] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:46:57 [http-nio-9090-exec-1] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:47:18 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 17492 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 00:47:18 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 00:47:18 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 00:47:26 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 00:47:33 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 15.937 seconds (process running for 16.634)
+2025-05-23 00:48:20 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 00:48:20 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 00:48:20 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 00:48:20 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0Nzk1MDUwMCwianRpIjoiYTBmNWEyYWYtMGUwMy00YWM3LWJmMjktZmVhNjIxNTJiNzI4IiwiZXhwIjoxNzQ3OTg2NTAwfQ.tTlr_9t_fcewqFMfOKMBinu_OSpSPiI2oyjrfmMPf7c
+2025-05-23 00:48:20 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 00:48:45 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının bildirimleri getiriliyor: aliSeccad@example.com
+2025-05-23 00:48:45 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 00:48:45 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 00:48:45 [http-nio-9090-exec-3] INFO  c.e.l.Service.NotificationsService - Tüm mesajlar getiriliyor: aliSeccad@example.com
+2025-05-23 00:48:45 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının 2 adet bildirimi bulundu: aliSeccad@example.com
+2025-05-23 16:15:22 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 4672 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 16:15:22 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 16:15:22 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 16:15:30 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 16:15:36 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 14.399 seconds (process running for 16.091)
+2025-05-23 16:15:46 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 16:15:46 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 16:15:46 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 16:15:46 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAwNjE0NiwianRpIjoiNGE0Yzg2ZmEtZGVkMy00YmQ5LTljYjUtMWMzMmE4YjA0YTcwIiwiZXhwIjoxNzQ4MDQyMTQ2fQ.66vNSk4QmceJMgzxyuJcEQn2se9ZiRoCUXjpqfzijSs
+2025-05-23 16:15:46 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 16:15:57 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının bildirimleri getiriliyor: aliSeccad@example.com
+2025-05-23 16:15:57 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı sorgulanıyor (Email=ali***@example.com)
+2025-05-23 16:15:57 [http-nio-9090-exec-3] INFO  c.e.l.Service.UsersService - Kullanıcı bilgisi getirildi (ID=3)
+2025-05-23 16:15:57 [http-nio-9090-exec-3] INFO  c.e.l.Service.NotificationsService - Tüm mesajlar getiriliyor: aliSeccad@example.com
+2025-05-23 16:15:57 [http-nio-9090-exec-3] INFO  c.e.l.Controller.CustomerController - Kullanıcının 2 adet bildirimi bulundu: aliSeccad@example.com
+2025-05-23 17:00:31 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 24864 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:00:31 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:00:31 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:00:40 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:00:45 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 14.292 seconds (process running for 21.223)
+2025-05-23 17:00:50 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: fatihdeneme@example.com
+2025-05-23 17:00:50 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  fatihdeneme@example.com
+2025-05-23 17:00:51 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: fatihdeneme@example.com
+2025-05-23 17:00:51 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmYXRpaGRlbmVtZUBleGFtcGxlLmNvbSIsInJvbGVzIjpbIlJPTEVfQ1VTVE9NRVIiXSwiaWF0IjoxNzQ4MDA4ODUxLCJqdGkiOiI4NDQ5MzdiZS1lYzllLTQ0MTYtYTk4Ni1hNjAzOWYzNTg1NjQiLCJleHAiOjE3NDgwNDQ4NTF9.XzM29p_eK-55uSakThpoRf1dwXYztzwnJty4948euvs
+2025-05-23 17:00:51 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: fatihdeneme@example.com
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.S.LoanApplicationsService - Yeni başvuru başlatıldı - Kullanıcı ID: 1
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.S.LoanApplicationsService - Başvuru değerlendirme işlemi başlatıldı - Başvuru ID: 4
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 4
+2025-05-23 17:01:49 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 4
+2025-05-23 17:01:49 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 90000.0, Kredi Skoru: 800.0
+2025-05-23 17:01:49 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 36.0
+2025-05-23 17:01:49 [http-nio-9090-exec-1] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 56.47058823529411
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 36.0, Kredi Skoru Faktörü: 56.47058823529411, Toplam Skor: 92.47058823529412
+2025-05-23 17:01:49 [http-nio-9090-exec-1] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 4, Skor: 92.47058823529412, Karar: APPROVED
+2025-05-23 17:01:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Messaging.NotificationConsumer - Yeni bildirim alındı: Kredi başvurunuz başarıyla alınmıştır. Başvuru ID: 4
+2025-05-23 17:01:49 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=1
+2025-05-23 17:04:11 [http-nio-9090-exec-6] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:04:11 [http-nio-9090-exec-6] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:04:11 [http-nio-9090-exec-6] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:04:11 [http-nio-9090-exec-6] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAwOTA1MSwianRpIjoiZDNlNjJmZjMtYzg3Mi00OGQzLWFiNWYtNjRmZGEwMTNjMmFmIiwiZXhwIjoxNzQ4MDQ1MDUxfQ.sxx5z6bk1YMxfQJQWrBcR3GiGxQEMvVOXatKucuIxp4
+2025-05-23 17:04:11 [http-nio-9090-exec-6] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:05:33 [http-nio-9090-exec-9] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 1
+2025-05-23 17:08:53 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 7356 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:08:53 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:08:53 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:09:00 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:09:04 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 12.682 seconds (process running for 13.718)
+2025-05-23 17:09:13 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:09:13 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:09:14 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAwOTM1NCwianRpIjoiMDRlN2IwMjctZTc0OC00NzZiLWI2NGUtNTEzZmE3MWRjZGI1IiwiZXhwIjoxNzQ4MDQ1MzU0fQ.jY1ER8dzvVj2dkzrCVplaepD9ISTP5r5LYMx75-Cvss
+2025-05-23 17:09:14 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:09:29 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 1
+2025-05-23 17:27:14 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 16416 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:27:14 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:27:14 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:27:21 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:27:26 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 12.983 seconds (process running for 13.974)
+2025-05-23 17:27:51 [http-nio-9090-exec-2] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 1
+2025-05-23 17:28:04 [http-nio-9090-exec-4] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 3
+2025-05-23 17:28:13 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 2
+2025-05-23 17:28:36 [http-nio-9090-exec-5] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 5
+2025-05-23 17:28:40 [http-nio-9090-exec-6] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 4
+2025-05-23 17:30:26 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 6380 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:30:26 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:30:26 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:30:33 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:30:37 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 11.793 seconds (process running for 12.583)
+2025-05-23 17:30:45 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:30:45 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:30:45 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:30:45 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMDY0NSwianRpIjoiZDU5MDZiZmYtMjJkNy00Mzc4LWJmOGItZDJmNjcxZGIxNTRiIiwiZXhwIjoxNzQ4MDQ2NjQ1fQ.3ySpLMOhEtCzwUYQo-ySo8HPyvAKdiFRnG87x9Up6SQ
+2025-05-23 17:30:45 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:30:48 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login attempt for userId: fatihdeneme@example.com
+2025-05-23 17:30:48 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  fatihdeneme@example.com
+2025-05-23 17:30:48 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: fatihdeneme@example.com
+2025-05-23 17:30:48 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmYXRpaGRlbmVtZUBleGFtcGxlLmNvbSIsInJvbGVzIjpbIlJPTEVfQ1VTVE9NRVIiXSwiaWF0IjoxNzQ4MDEwNjQ4LCJqdGkiOiJjMGJlYzVjNS0zMDQ5LTQwZjctYWY2Zi0wNWM5OWQ4NDhlZGQiLCJleHAiOjE3NDgwNDY2NDh9.jw5AsGhZtHe0db4yypOE5-mgWsGSp7K1BcYGCTfdO-0
+2025-05-23 17:30:48 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login successful for userId: fatihdeneme@example.com
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.S.LoanApplicationsService - Yeni başvuru başlatıldı - Kullanıcı ID: 1
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 1, Aksiyon: KREDİ BAŞVURUSU YAPILDI, Hesap Numarası: null
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.S.LoanApplicationsService - Başvuru değerlendirme işlemi başlatıldı - Başvuru ID: 5
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 5
+2025-05-23 17:31:14 [http-nio-9090-exec-4] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 5
+2025-05-23 17:31:14 [http-nio-9090-exec-4] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 90000.0, Kredi Skoru: 800.0
+2025-05-23 17:31:14 [http-nio-9090-exec-4] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 36.0
+2025-05-23 17:31:14 [http-nio-9090-exec-4] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 56.47058823529411
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 36.0, Kredi Skoru Faktörü: 56.47058823529411, Toplam Skor: 92.47058823529412
+2025-05-23 17:31:14 [http-nio-9090-exec-4] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 5, Skor: 92.47058823529412, Karar: APPROVED
+2025-05-23 17:31:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Messaging.NotificationConsumer - Yeni bildirim alındı: Kredi başvurunuz başarıyla alınmıştır. Başvuru ID: 5
+2025-05-23 17:31:14 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=1
+2025-05-23 17:31:26 [http-nio-9090-exec-7] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:31:26 [http-nio-9090-exec-7] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:31:26 [http-nio-9090-exec-7] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:31:26 [http-nio-9090-exec-7] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMDY4NiwianRpIjoiMzllYzg3MDAtMjhmYy00M2MzLTg3ODQtODdlZjkwOTI4N2Q3IiwiZXhwIjoxNzQ4MDQ2Njg2fQ.Nytk_crgwixgmme8ekKiVpYNAhnUo06feYdcnwW3-j8
+2025-05-23 17:31:26 [http-nio-9090-exec-7] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:31:34 [http-nio-9090-exec-8] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 3
+2025-05-23 17:31:39 [http-nio-9090-exec-9] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 1
+2025-05-23 17:31:49 [http-nio-9090-exec-10] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 4
+2025-05-23 17:31:53 [http-nio-9090-exec-2] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 5
+2025-05-23 17:32:00 [http-nio-9090-exec-1] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 6
+2025-05-23 17:32:38 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 0
+2025-05-23 17:32:41 [http-nio-9090-exec-4] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 2
+2025-05-23 17:34:58 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:34:58 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:34:58 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:34:58 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMDg5OCwianRpIjoiYTcwMmEwMmQtY2M5Ny00ZTE1LThjMDAtYzc3Y2I2MGUxYzgzIiwiZXhwIjoxNzQ4MDQ2ODk4fQ.DscqeM991us_85gRP1KALQ7dHH87p6wRPCq9bQuyDj4
+2025-05-23 17:34:58 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:40:10 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 2992 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:40:10 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:40:10 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:40:17 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:40:22 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 11.889 seconds (process running for 12.665)
+2025-05-23 17:40:57 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 14828 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:40:57 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:40:57 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:41:04 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:41:10 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 13.546 seconds (process running for 14.383)
+2025-05-23 17:41:28 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:41:28 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:41:28 [http-nio-9090-exec-2] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:41:28 [http-nio-9090-exec-2] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMTI4OCwianRpIjoiYWU4MDVmNWEtNzcwNy00OTM1LWJkODAtNDYxMTY5NGMwMDFmIiwiZXhwIjoxNzQ4MDQ3Mjg4fQ.VPRwyeN7m6Mbq72YSMaC_tPqQvrlZxUaktawpcYiu14
+2025-05-23 17:41:28 [http-nio-9090-exec-2] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:43:14 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 22036 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:43:14 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:43:14 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:43:20 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:43:24 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 10.548 seconds (process running for 11.283)
+2025-05-23 17:43:40 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 13720 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:43:40 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:43:40 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:43:46 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:43:51 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 11.184 seconds (process running for 11.902)
+2025-05-23 17:44:04 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:44:04 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:44:04 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:44:04 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMTQ0NCwianRpIjoiNjY5OGVlNWQtZjY3ZC00MTQzLWI5ZTMtZmQzNDVkYzc2MDM2IiwiZXhwIjoxNzQ4MDQ3NDQ0fQ.THek0JR-3XwzfV2vDu1J6QQ1VZMLuuIe2uEhuUJg1HQ
+2025-05-23 17:44:04 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:45:10 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 16196 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:45:10 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:45:10 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:45:16 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:45:20 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 10.892 seconds (process running for 11.483)
+2025-05-23 17:45:30 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:45:30 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:45:30 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:45:30 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMTUzMCwianRpIjoiN2JiZTY0NjgtODI3Yy00ZGJkLWEzMGUtNmRjNzU4MTBmZmVhIiwiZXhwIjoxNzQ4MDQ3NTMwfQ.YBZFX6Pdmyak5ZQ87OBRHV24YX51SeSq47cXl7MXAxk
+2025-05-23 17:45:30 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:45:34 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:45:34 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:45:34 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:45:34 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMTUzNCwianRpIjoiNjllNzFjY2UtZjhiMi00NTlhLThkYTktMzJhZWZmYTc1YmUwIiwiZXhwIjoxNzQ4MDQ3NTM0fQ.9qmKilX-9anFajspbrdRnk9mNY78UL5SaAf0hxpdec0
+2025-05-23 17:45:34 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:46:11 [http-nio-9090-exec-5] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 2
+2025-05-23 17:51:44 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 23060 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 17:51:44 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 17:51:44 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 17:51:51 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 17:51:55 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 11.945 seconds (process running for 12.681)
+2025-05-23 17:52:12 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 17:52:12 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 17:52:12 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 17:52:12 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxMTkzMiwianRpIjoiYzE4ZDcwZTItNjZhMS00YzRiLWE1YTctNDI0MTAzMzg0MjMxIiwiZXhwIjoxNzQ4MDQ3OTMyfQ.EAxQAR6cK6XvE1QNJleLHMgh1h5uQMGK0giiinReyN8
+2025-05-23 17:52:12 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-23 17:52:28 [http-nio-9090-exec-3] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 2
+2025-05-23 17:52:49 [http-nio-9090-exec-4] INFO  c.e.l.S.LoanApplicationsService - Başvuru getiriliyor - ID: 5
+2025-05-23 17:54:18 [http-nio-9090-exec-7] INFO  c.e.l.S.LoanApplicationsService - Tüm başvurular getiriliyor.
+2025-05-23 19:42:20 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 5732 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-23 19:42:20 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-23 19:42:20 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-23 19:42:29 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-23 19:42:34 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 15.193 seconds (process running for 22.81)
+2025-05-23 19:43:06 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-23 19:43:06 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-23 19:43:07 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-23 19:43:07 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODAxODU4NywianRpIjoiN2QyYWU3OGEtZmZkMy00ZDdkLTg2OTctZjZmODFiOTMwZjVlIiwiZXhwIjoxNzQ4MDU0NTg3fQ.QYvAGB4j4qhh0245FB4woZbwxopnhVjRQoVWXp7f54Y
+2025-05-23 19:43:07 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com

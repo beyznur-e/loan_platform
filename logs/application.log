@@ -1,0 +1,38 @@
+2025-05-27 14:11:38 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 16924 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-27 14:11:38 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-27 14:11:38 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:11:50 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-27 14:11:57 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 20.689 seconds (process running for 31.068)
+2025-05-27 14:12:45 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-27 14:12:45 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-27 14:12:46 [http-nio-9090-exec-1] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-27 14:12:46 [http-nio-9090-exec-1] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODM0NDM2NiwianRpIjoiMGQ2OTQyOTgtNWUxNy00NTQ5LWIyOWUtNDBkZWRhZGZiODcxIiwiZXhwIjoxNzQ4MzgwMzY2fQ.NenI4KTEdS4j5rswDnTrliB2qMeZ2TrEgxQQtyHPkPw
+2025-05-27 14:12:46 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-27 14:17:10 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 9016 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-27 14:17:10 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-27 14:17:10 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:17:21 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-27 14:17:27 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 17.253 seconds (process running for 18.366)
+2025-05-27 14:17:56 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-27 14:17:56 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-27 14:17:56 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-27 14:17:56 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODM0NDY3NiwianRpIjoiYjAyNjNkODYtNmZhNS00MzE4LWEwNzgtZmM4MTFhMmQ2OTlmIiwiZXhwIjoxNzQ4MzgwNjc2fQ._1pCqqhtTHbIs_xodJIgC7nQ80tYDNNiUZhcp88Tq7k
+2025-05-27 14:17:56 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-27 14:18:31 [http-nio-9090-exec-4] INFO  c.e.l.Controller.AuditLogsController - Kullanıcının logları isteniyor: userId=1
+2025-05-27 14:20:25 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 12232 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-27 14:20:25 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-27 14:20:25 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-27 14:20:32 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-27 14:20:37 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 13.246 seconds (process running for 14.19)
+2025-05-27 14:20:56 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login attempt for userId: aliSeccad@example.com
+2025-05-27 14:20:56 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-27 14:20:57 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-27 14:20:57 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODM0NDg1NywianRpIjoiZDc3N2JkOGEtYTRkZS00NTgyLTg2MTMtOTQ4YWQ0YWFiNGQwIiwiZXhwIjoxNzQ4MzgwODU3fQ.cy0dBupi6WC_hkaOPG909zwjZy1I6DTiPiRi0oahzOM
+2025-05-27 14:20:57 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Login successful for userId: aliSeccad@example.com
+2025-05-27 14:21:10 [http-nio-9090-exec-1] INFO  c.e.l.Controller.AuditLogsController - Kullanıcının logları isteniyor: userId=1
+2025-05-27 14:25:04 [http-nio-9090-exec-6] INFO  c.e.l.Controller.AuditLogsController - Hesap numarasına göre loglar isteniyor: accountNumber=1234567891234567
+2025-05-28 23:50:51 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 23732 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-28 23:50:51 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-28 23:50:51 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-28 23:51:00 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-28 23:51:06 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 15.117 seconds (process running for 17.96)
