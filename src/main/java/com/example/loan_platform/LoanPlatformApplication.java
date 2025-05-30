@@ -11,8 +11,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableCaching
-//@EntityScan("com.example.loan_platform.Entity")
-//@EnableJpaRepositories("com.example.loan_platform.Repository")
+@EntityScan("com.example.loan_platform.Entity")
+@EnableJpaRepositories("com.example.loan_platform.Repository")
 @EnableBatchProcessing
 public class LoanPlatformApplication {
 

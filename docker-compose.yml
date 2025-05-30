@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "9090:9090"
+    depends_on:
+      - postgres
+      - redis
+      - rabbitmq
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/loan_platform
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 1234
+      SPRING_REDIS_HOST: redis
+      SPRING_RABBITMQ_HOST: rabbitmq
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: loan_platform
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./loan_platform_dump.sql:/docker-entrypoint-initdb.d/init.sql
+
+
+volumes:
+  pgdata:

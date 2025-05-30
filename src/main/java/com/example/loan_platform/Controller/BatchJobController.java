@@ -21,8 +21,6 @@ import java.sql.SQLException;
 
 @RestController
 @RequestMapping("/api/batch")
-@RequiredArgsConstructor
-@Slf4j
 public class BatchJobController {
 
     private static final Logger log = LoggerFactory.getLogger(BatchJobController.class);

@@ -1,0 +1,121 @@
+2025-05-29 18:42:36 [main] INFO  c.e.l.AuditLogsServiceTest - Starting AuditLogsServiceTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:36 [main] DEBUG c.e.l.AuditLogsServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:36 [main] INFO  c.e.l.AuditLogsServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 18:42:49 [main] INFO  c.e.l.AuditLogsServiceTest - Started AuditLogsServiceTest in 12.511 seconds (process running for 13.702)
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 8, Aksiyon: Deposit, Hesap Numarası: 111111
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 8, Aksiyon: Deposit, Hesap Numarası: 111111
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 8, Aksiyon: Withdraw, Hesap Numarası: 111111
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 8, Aksiyon: Withdraw, Hesap Numarası: 111111
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 9, Aksiyon: Test Action, Hesap Numarası: 123456789
+2025-05-29 18:42:49 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 9, Aksiyon: Test Action, Hesap Numarası: 123456789
+2025-05-29 18:42:50 [main] INFO  c.e.l.BankAccountsServiceTest - Starting BankAccountsServiceTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:50 [main] DEBUG c.e.l.BankAccountsServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:50 [main] INFO  c.e.l.BankAccountsServiceTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 18:42:52 [main] INFO  c.e.l.BankAccountsServiceTest - Started BankAccountsServiceTest in 2.803 seconds (process running for 17.486)
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı oluşturuluyor. Kullanıcı ID: 10, Banka: Test Bank, IBAN: TR00123456789
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı başarıyla oluşturuldu. Kullanıcı ID: 10, Hesap ID: 4, IBAN: TR00123456789
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı oluşturuluyor. Kullanıcı ID: 11, Banka: Test Bank, IBAN: TR00123456789
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı başarıyla oluşturuldu. Kullanıcı ID: 11, Hesap ID: 5, IBAN: TR00123456789
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı oluşturuluyor. Kullanıcı ID: 12, Banka: Test Bank, IBAN: TR00123456789
+2025-05-29 18:42:52 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı başarıyla oluşturuldu. Kullanıcı ID: 12, Hesap ID: 6, IBAN: TR00123456789
+2025-05-29 18:42:53 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı oluşturuluyor. Kullanıcı ID: 13, Banka: Test Bank, IBAN: TR00123456789
+2025-05-29 18:42:53 [main] INFO  c.e.l.Service.BankAccountsService - Banka hesabı başarıyla oluşturuldu. Kullanıcı ID: 13, Hesap ID: 7, IBAN: TR00123456789
+2025-05-29 18:42:53 [main] INFO  c.e.l.BatchControllerTest - Starting BatchControllerTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:53 [main] DEBUG c.e.l.BatchControllerTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:53 [main] INFO  c.e.l.BatchControllerTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 18:42:55 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-29 18:42:55 [main] INFO  c.e.l.BatchControllerTest - Started BatchControllerTest in 2.785 seconds (process running for 20.55)
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge yükleme işlemi başladı - Kullanıcı: 14
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla yüklendi - Kullanıcı: 14, Başvuru: 27
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 14, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 14, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge yükleme işlemi başladı - Kullanıcı: 15
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla yüklendi - Kullanıcı: 15, Başvuru: 28
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 15, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 15, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Kullanıcının belgeleri getiriliyor: 15
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge yükleme işlemi başladı - Kullanıcı: 16
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla yüklendi - Kullanıcı: 16, Başvuru: 29
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 16, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 16, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge güncelleme işlemi başladı: 5
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla güncellendi: 5
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 16, Aksiyon: BELGE GÜNCELLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 16, Aksiyon: BELGE GÜNCELLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge yükleme işlemi başladı - Kullanıcı: 17
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla yüklendi - Kullanıcı: 17, Başvuru: 30
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - Kullanıcı işlem kaydediliyor. Kullanıcı ID: 17, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.AuditLogsService - İşlem kaydedildi. Kullanıcı ID: 17, Aksiyon: BELGE BAŞARYLA YÜKLENDİ, Hesap Numarası: null
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge silme işlemi başladı: 6
+2025-05-29 18:42:56 [main] INFO  c.e.l.Service.DocumentsService - Belge başarıyla silindi
+2025-05-29 18:42:56 [main] INFO  c.e.l.LoanPaymentBatchTest - Starting LoanPaymentBatchTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:56 [main] DEBUG c.e.l.LoanPaymentBatchTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:56 [main] INFO  c.e.l.LoanPaymentBatchTest - The following 1 profile is active: "test"
+2025-05-29 18:42:58 [main] INFO  c.e.l.LoanPaymentBatchTest - Started LoanPaymentBatchTest in 2.762 seconds (process running for 23.62)
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 32
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 32
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 500.0, Kredi Skoru: 100.0
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 0.2
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 7.058823529411764
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 0.2, Kredi Skoru Faktörü: 7.058823529411764, Toplam Skor: 7.258823529411764
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 32, Skor: 7.258823529411764, Karar: REJECTED
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Başvuru alınıyor: 33
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Başvuru bulundu: 33
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru hesaplaması başlatıldı. Gelir: 500.0, Kredi Skoru: 100.0
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Gelir faktörü hesaplandı: 0.2
+2025-05-29 18:42:59 [main] DEBUG c.e.l.Service.LoanScoringService - Kredi skoru faktörü hesaplandı: 7.058823529411764
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Kredi skoru hesaplandı. Gelir Faktörü: 0.2, Kredi Skoru Faktörü: 7.058823529411764, Toplam Skor: 7.258823529411764
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.LoanScoringService - Kredi skoru kaydedildi: Application ID: 33, Skor: 7.258823529411764, Karar: REJECTED
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=21
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=22
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim okunmuş olarak işaretleniyor. Bildirim ID: 53
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim başarıyla okunmuş olarak işaretlendi. Bildirim ID: 53
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=23
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=23
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=23
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Tüm mesajlar getiriliyor: test3@example.com
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=24
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Bildirim veritabanına kaydedildi: Kullanıcı ID=24
+2025-05-29 18:42:59 [main] INFO  c.e.l.Service.NotificationsService - Okunmamış mesajlar getiriliyor: test3@example.com
+2025-05-29 18:42:59 [main] INFO  c.e.loan_platform.UserRepositoryTest - Starting UserRepositoryTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:59 [main] DEBUG c.e.loan_platform.UserRepositoryTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:59 [main] INFO  c.e.loan_platform.UserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 18:42:59 [main] INFO  c.e.loan_platform.UserRepositoryTest - Started UserRepositoryTest in 0.663 seconds (process running for 24.539)
+2025-05-29 18:42:59 [main] INFO  c.e.loan_platform.UsersServiceTest - Starting UsersServiceTest using Java 21.0.5 with PID 22952 (started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 18:42:59 [main] DEBUG c.e.loan_platform.UsersServiceTest - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 18:42:59 [main] INFO  c.e.loan_platform.UsersServiceTest - The following 1 profile is active: "test"
+2025-05-29 18:43:02 [main] INFO  c.e.loan_platform.UsersServiceTest - Started UsersServiceTest in 2.376 seconds (process running for 26.965)
+2025-05-29 18:43:02 [main] INFO  c.e.l.Service.UsersService - Yeni kullanıcı kaydı başlatıldı: aliSeccad2@example.com
+2025-05-29 19:11:59 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 17008 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 19:11:59 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 19:11:59 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 19:12:07 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-29 19:14:49 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 12808 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 19:14:49 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 19:14:49 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 19:14:57 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-29 19:15:02 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 14.153 seconds (process running for 15.235)
+2025-05-29 19:15:18 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Kullanıcı için giriş : aliSeccad@example.com
+2025-05-29 19:15:18 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kullanıcı için giriş:  aliSeccad@example.com
+2025-05-29 19:15:18 [http-nio-9090-exec-3] INFO  c.e.l.Service.AuthService - Kimlik doğrulama başarılı: aliSeccad@example.com
+2025-05-29 19:15:19 [http-nio-9090-exec-3] DEBUG c.e.l.Service.AuthService - JWT token oluşturuldu: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbGlTZWNjYWRAZXhhbXBsZS5jb20iLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0ODUzNTMxOCwianRpIjoiMzk5NDJiNWQtYzdiMy00YzQwLWI2YmQtMmJmMjE0NjRlMmM4IiwiZXhwIjoxNzQ4NTcxMzE4fQ.BfV4CpcPau01R54i7sjBj9rpcvbLvpIDORMF-kg5qPs
+2025-05-29 19:15:19 [http-nio-9090-exec-3] INFO  c.e.l.Controller.AuthController - Başarılı giriş: aliSeccad@example.com
+2025-05-29 20:20:44 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 10096 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 20:20:44 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 20:20:44 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 20:20:53 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-29 20:21:02 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 18.894 seconds (process running for 20.435)
+2025-05-29 20:43:08 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 29388 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 20:43:08 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 20:43:08 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 23:36:37 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 25368 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 23:36:37 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 23:36:37 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 23:39:10 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 28692 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 23:39:10 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 23:39:10 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 23:56:41 [main] INFO  c.e.l.LoanPlatformApplication - Starting LoanPlatformApplication using Java 23.0.1 with PID 27616 (C:\Users\beyzanur\OneDrive\Desktop\loan_platform\target\classes started by beyzanur in C:\Users\beyzanur\OneDrive\Desktop\loan_platform)
+2025-05-29 23:56:41 [main] DEBUG c.e.l.LoanPlatformApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-05-29 23:56:41 [main] INFO  c.e.l.LoanPlatformApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-29 23:56:48 [main] DEBUG c.e.l.S.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-05-29 23:56:56 [main] INFO  c.e.l.LoanPlatformApplication - Started LoanPlatformApplication in 15.396 seconds (process running for 16.392)
